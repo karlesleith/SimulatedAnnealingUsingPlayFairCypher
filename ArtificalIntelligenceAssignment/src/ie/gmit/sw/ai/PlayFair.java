@@ -7,7 +7,7 @@ public class PlayFair {
     private static char[][] charTable;
     private static Point[] positions;
 
- 
+ //Promting the User to do stuff 
     public static String prompt(String promptText, String kw, int minLen) {
         String s;
         do {

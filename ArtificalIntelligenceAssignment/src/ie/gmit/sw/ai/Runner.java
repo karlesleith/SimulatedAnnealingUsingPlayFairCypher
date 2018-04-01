@@ -1,12 +1,13 @@
 package ie.gmit.sw.ai;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Runner {
 	
-	PlayFair pf = new PlayFair();
+
 	
-	private static String kw = "THEQUICKBROWNFOX";
+	private static String kw = "thequickbrownfoxjumpedoverthelazydog";
 	private static String mes = "THEHOBBITCHAPTERIANUNEXPECTEDPARTYINAHOLEINTHEGROUNDTHERELIVEDAHOBBITNOTANASTYDIRTYWETHOLEFILLEDWITHTHEENDSOFWORMSANDANOOZYSMELLNORYETADRYBARESANDYHOLEWITHNOTHINGINITTOSITDOWNONORTOEATITWASAHOBBITHOLEANDTHATMEANSCOMFO\r\n" + 
 			"RTITHADAPERFECTLYROUNDDOORLIKEAPORTHOLEPAINTEDGREENWITHASHINYYELLOWBRASSKNOBINTHEEXACTMIDDLETHEDOOROPENEDONTOATUBESHAPEDHALLLIKEATUNNELAVERYCOMFORTABLETUNNELWITHOUTSMOKEWITHPANELLEDWALLSANDFLOORSTILEDANDCARPETEDPROVIDEDWITHP\r\n" + 
 			"OLISHEDCHAIRSANDLOTSANDLOTSOFPEGSFORHATSANDCOATSTHEHOBBITWASFONDOFVISITORSTHETUNNELWOUNDONANDONGOINGFAIRLYBUTNOTQUITESTRAIGHTINTOTHESIDEOFTHEHILLTHEHILLASALLTHEPEOPLEFORMANYMILESROUNDCALLEDITANDMANYLITTLEROUNDDOORSOPENEDOUTOFITF\r\n" + 
@@ -19,12 +20,17 @@ public class Runner {
 			"OSHOESBECAUSETHEIRFEETGROWNATURALLEATHERYSOLESANDTHICKWARMBROWNHAIRLIKETHESTUFFONTHEIRHEADSWHICHISCURLYHAVELONGCLEVERBROWNFINGERSGOODNATUREDFACESANDLAUGHDEEPFRUITYLAUGHSESPECIALLYAFTERDINNERWHICHTHEYHAVETWICEADAYWHENTHEYCANGETITNOW\r\n" + 
 			"YOUKNOWENOUGHTOGOONWITHASIWASSAYINGTHEMOTHEROFTHISHOBBITOFBILBOBAGGINSTHATISWASTHEFAMOUSBELLADONNATOOKONEOFTHETHREEREMARKABLEDAUGHTERSOFTHEOLDTOOKHEADOFTHEHOBBITSWHOLIVEDACROSSTHEWATERTHESMALLRIVERTHATRANATTHEFOOTOFTHEHILLITWASOFTE";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+    	
+    	Grams g = new Grams();
 
     	PlayFair pf = new PlayFair();
+    	Key k = new Key();
         String key = pf.prompt("", kw, 6);
         String txt = pf.prompt("", mes, 1);
         String jti = pf.prompt("", kw, 1);
+        
+        long startime = System.currentTimeMillis();
  
         boolean changeJtoI = jti.equalsIgnoreCase("y");
  
@@ -34,6 +40,22 @@ public class Runner {
  
         System.out.printf("%nEncoded message: %n%s%n", enc);
         System.out.printf("%nDecoded message: %n%s%n", pf.decode(enc));
+        
+        
+        //printing the fourgrams
+        g.fourGrams();
+        
+        //Time
+        long finishTime = System.currentTimeMillis() - startime;
+        
+        System.out.println("\nTIME: "+ finishTime+"ms");
+        
+        //Key Shuffle
+        String GenKey = k.KeyGen();
+        System.out.println(GenKey);
+        
+      
+        
     }
 }
 
