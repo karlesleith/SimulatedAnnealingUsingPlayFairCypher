@@ -8,6 +8,11 @@ Continious Assessment relating to "Artificial Intelligence" module, Final Year o
 In the command line, go to the root directory of the project and type in..
 **java -cp ./PlayFair.jar ie.gmit.sw.ai.CipherBreaker**
 
+When the program runs, it will ask you to input a text file of your choice, this text file must be in the same directory as the jar.
+After you will be ask to input a tempiture, this will have an impact on the cooling algorthim.
+
+Lastly after the process has ended, the results will be outputted to the "DecryptedMessage.txt" textfile.
+
 During this module, The project required for us is to develop a "CypherBreaker" program that is able to crack a PlayFair cypher using a process called "Simulated Annealing".
 
 ##PlayFair
