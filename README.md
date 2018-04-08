@@ -1,6 +1,8 @@
 # SimulatedAnnealingUsingPlayFairCypher
 Continious Assessment relating to "Artificial Intelligence" module, Final Year of Hons Software Development
 
+During this module, The project required for us is to develop a "CypherBreaker" program that is able to crack a PlayFair cypher using a process called "Simulated Annealing".
+
 ## Project URL : https://github.com/karlesleith/SimulatedAnnealingUsingPlayFairCypher
 
  ![Screenshot](https://github.com/karlesleith/SimulatedAnnealingUsingPlayFairCypher/blob/master/ScreenShots/CipherBreaker.PNG)
@@ -12,8 +14,6 @@ When the program runs, it will ask you to input a text file of your choice, this
 After you will be ask to input a tempiture, this will have an impact on the cooling algorthim.
 
 Lastly after the process has ended, the results will be outputted to the "DecryptedMessage.txt" textfile.
-
-During this module, The project required for us is to develop a "CypherBreaker" program that is able to crack a PlayFair cypher using a process called "Simulated Annealing".
 
 ## PlayFair
 
