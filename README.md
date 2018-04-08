@@ -3,7 +3,7 @@ Continious Assessment relating to "Artificial Intelligence" module, Final Year o
 
 ## Project URL : https://github.com/karlesleith/SimulatedAnnealingUsingPlayFairCypher
 
-
+ ![Screenshot](https://github.com/karlesleith/SimulatedAnnealingUsingPlayFairCypher/blob/master/ScreenShots/CipherBreaker.PNG)
 ## How To Run
 In the command line, go to the root directory of the project and type in..
 **java -cp ./PlayFair.jar ie.gmit.sw.ai.CipherBreaker**
@@ -15,7 +15,7 @@ Lastly after the process has ended, the results will be outputted to the "Decryp
 
 During this module, The project required for us is to develop a "CypherBreaker" program that is able to crack a PlayFair cypher using a process called "Simulated Annealing".
 
-##PlayFair
+## PlayFair
 
 The Playfair Cipher is a manual symmetric encryption cipher invented in 1854 by Charles Wheatstone, however it’s name and popularity came from the endorsement of Lord Playfair.
 
@@ -28,7 +28,7 @@ grid of letters that will act as the key for encrypting your plaintext. Each of 
 etter of the alphabet (usually Q) is omitted from the table (as there are 25 spots and 26 letters in the alphabet).
 
 
-##Simulated Annealing
+## Simulated Annealing
 Simulated annealing (SA) is a probabilistic technique for approximating the global optimum of a given function. Specifically, it is a heuristic to approximate global optimization 
 in a large search space. It is often used when the search space is discrete (e.g., all tours that visit a given set of cities). For problems where finding an approximate global optimum is
  more important than finding a precise local optimum in a fixed amount of time, simulated annealing may be preferable to alternatives such as gradient descent.
