@@ -13,7 +13,7 @@ public class KeyShuffler {
 	private String childKey = "hi";
 	private char[][] cypherMatrix;
 	
-	//The alphabet won't chnage anytime soon
+	//The alphabet won't chnage anytime soon, Removed J as it will not be used
 	private static final String Alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
 	
 	public void setCypherMatrix(String key) {
@@ -29,6 +29,7 @@ public class KeyShuffler {
 		this.cypherMatrix = temp;
 	}
 
+	//Getting the Parent Key, Also Sets for simplicity
 	public String getParentKey() {
 		
 		setParentKey();
@@ -43,14 +44,16 @@ public class KeyShuffler {
 
 	}
 
+	//Getting child key
 	public String getChildKey() {
 		return childKey;
 	}
-
+//Setting Child Key
 	public void setChildKey(String childKey) {
 		this.childKey = childKey;
 	}
 
+	//Getting the cypher Matrix
 	public char[][] getCypherMatrix() {
 		return cypherMatrix;
 	}
@@ -168,6 +171,7 @@ public class KeyShuffler {
 	//flipping the rows
 	private void flipAllRows() {
 		
+		//Outter for loop for rows inner for collums
 		for (int i = 0; i < 5; i++) {
 			char[] temp = cypherMatrix[i];
 			
@@ -182,13 +186,11 @@ public class KeyShuffler {
 	}
 	//Flipping the collums
 	private void flipAllCollumns() {
-		
+		//Outter for loop for rows inner for collums
 		for (int i = 0; i < 5/2; i++) {
-			
 			for (int j = 0; j < 5; j++) {
 				char temp = cypherMatrix[i][j];
 				cypherMatrix[i][j] = cypherMatrix[5 - i - 1][j];
-				
 				cypherMatrix[5 - i - 1][j] = temp;
 			}
 		}
